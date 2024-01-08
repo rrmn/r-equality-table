@@ -1,9 +1,18 @@
 Equality in R is mostly straightforward, but sometimes it's not. Take care.
 
+### Example
+```
+0 == 0        --> ✅ 𝗧𝗥𝗨𝗘
+0 == "0"      --> ✅ 𝗧𝗥𝗨𝗘
+0 == FALSE    --> ✅ 𝗧𝗥𝗨𝗘
+𝗯𝘂𝘁:
+FALSE == "0"  --> ❌ 𝗙𝗔𝗟𝗦𝗘 
+```
+
 ### Thanks
 Thanks to [dorey](https://github.com/dorey) for the [idea](https://github.com/dorey/JavaScript-Equality-Table).
 
-### Result
+### Comparison Table
 ![image](https://github.com/rrmn/r-equality-table/assets/14080347/b413c12c-034b-410d-b835-b1eb54dd4cbf)
 
 
