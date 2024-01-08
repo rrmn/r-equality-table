@@ -4,11 +4,12 @@ Equality in R is mostly straightforward, but sometimes it's not. Take care.
 Thanks to [dorey](https://github.com/dorey) for the [idea](https://github.com/dorey/JavaScript-Equality-Table).
 
 ### Result
-![image](https://github.com/rrmn/r-equality-table/assets/14080347/ebecd57a-587e-401c-a353-0e8045bc24c2)
+![image](https://github.com/rrmn/r-equality-table/assets/14080347/b413c12c-034b-410d-b835-b1eb54dd4cbf)
 
 
 ### Code
 ```
+
 # sorry for the hacky code :-)
 x_labels <- c(
     "FALSE", "F", "0", "\"0\"", "0L", "\"0L\"", "0.0", "\"0.0\"", "0.0L", "\"0.0L\"", "list(0)", "c(0)",
@@ -70,9 +71,13 @@ ggplot(res_df) +
         alpha = 0.7,
         stat = "identity"
     ) +
-    theme(legend.title = element_blank()) +
+    theme(
+        legend.title = element_blank(), panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), panel.background = element_blank(), 
+        axis.line = element_line(colour = "black")
+    ) +
     scale_fill_manual(values = c("#06d6a0", "#ef476f", "#8d99ae", "#118ab2", "#073b4c")) +
     scale_y_continuous(expand=c(0,0), breaks = 1:length(x_labels) - 0.5, labels = x_labels) +
-    scale_x_continuous(expand=c(0,0), breaks = 1:length(x_labels) - 0.5, labels = x_labels) +
-    labs(title = "R Equality Table", subtitle = "Formula: X == Y", caption = "Code available under github.com/rrmn/r-equality-table")
+    scale_x_continuous(expand=c(0,0), breaks = 1:length(x_labels) - 0.5, labels = x_labels) 
+    
 ```
