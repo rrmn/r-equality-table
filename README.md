@@ -4,7 +4,7 @@ Equality in R is mostly straightforward, but sometimes it's not. Take care.
 Thanks to [dorey](https://github.com/dorey) for the [idea](https://github.com/dorey/JavaScript-Equality-Table).
 
 ### Result
-![image](https://github.com/rrmn/r-equality-table/assets/14080347/780a0fb6-0d69-4428-9dae-45485bdc7673)
+![image](https://github.com/rrmn/r-equality-table/assets/14080347/ebecd57a-587e-401c-a353-0e8045bc24c2)
 
 
 ### Code
